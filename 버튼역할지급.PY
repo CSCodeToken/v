@@ -1,6 +1,5 @@
 import discord
 from discord_components import DiscordComponents, Button, ButtonStyle, interaction
-import os
 
 client = discord.Client()
 
@@ -29,5 +28,4 @@ async def on_button_click(interaction: interaction):
         await interaction.respond(content="역할이 지급되었습니다")
 
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run(token)
